@@ -1,0 +1,12 @@
+ <form method="POST" action="{% url 'add' %}">{% csrf_token %}
+    <label>Add First value here</label>
+    <input type="text" name="input_1"><br><br>
+    <label>Add second  value here</label>   
+    <input type="text" name="input_2"><br><br>
+    <input type="submit" name="add" value="add">
+    <input type="submit" name="Sub" value="Sub">
+    <input type="submit" name="Mul" value="Mul">
+    <input type="submit" name="Div" value="Div">
+
+    Total is {{result}}
+</form>
